@@ -27,18 +27,6 @@ function doScissors() {
     playHand("scissors");
 }
 
-/* function announceHumanChoice(choice) {
-    let newLi = document.createElement("li");
-    newLi.innerText = "You threw " + choice;
-    list.appendChild(newLi);
-}
-
-function announceComputerChoice(choice) {
-    let newLi = document.createElement("li");
-    newLi.innerText = "Computer threw " + choice;
-    list.appendChild(newLi);
-} */
-
 function announceBothChoices(human, computer) {
     let newLi = document.createElement("li");
     newLi.innerText = "You threw " + human +", Computer threw " + computer;
@@ -78,8 +66,6 @@ function scoreKeeper() {
 
 function playHand (human) {
     let computer = chooseComputer();
-/*     announceHumanChoice(human);
-    announceComputerChoice(computer); */
     announceBothChoices(human, computer)
     if (human === computer) {
         console.log("Tie!");
@@ -102,10 +88,3 @@ function playHand (human) {
         endGame();
     }
 }
-
-/* function playRound() {
-    while (humanWins < 3 && computerWins < 3) {
-        playHand();
-    }
-    console.log("Final Score: Human " + humanWins + ", Computer " + computerWins);
-} */

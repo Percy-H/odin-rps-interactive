@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-P-S</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Let's Play Rock Paper Scissors!</h1>
+    </header>
+    
+    <div class="gameDiv">
+        <div id="images">
+            <img id="picOfRock" src="images/rock-1.jpg" alt="">
+            <img id="picOfPaper" src="images/paper-1.jpg" alt="">
+            <img id="picOfScissors" src="images/scissors-2.jpg" alt="">
+        </div>
+        <div id="gameProgress">
+            <div id="scoreboard">
+                <div id="man">
+                    <img src="images/bx-smile.svg" alt="">
+                    <p id="manscore">0</p>
+                </div>
+                <div id="bot">
+                    <img src="images/bx-bot.svg" alt="">
+                    <p id="botscore">0</p>
+                </div>
+
+            </div>
+            <p id="winner"></p>
+            <ul id="scoreCrawl">
+
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
